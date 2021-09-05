@@ -1,0 +1,11 @@
+{
+  "name": "formna",
+  "version": "1.0.0",
+  "description": "build vanilla js forms without much more pain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shakya Peiris",
+  "license": "ISC"
+}
