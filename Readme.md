@@ -11,10 +11,31 @@ The current versions of Formna can be downloaded from <a href="#"><b>here<b></a>
 If you don't want to download and host formna yourself, you can include it from a CDN (Content Delivery Network)
   
 ## Usage
-  ```html
-  <head>
-<script src="ValidateInput.js"></script>
-</head>
+* To Validate a Complete Form.
+  ```javascript
+  import { validateForm } from 'formna';
+
+  const className = "form";
+  const fileldDetails = [
+    {
+      className: "username",
+      errorName: "usernameError",
+      initialValue: "",
+      errorMessage: "Enter a valid email",
+      errorClassName: "error",
+      validator: (inputVal) => inputVal.includes("@"),
+    },
+    {
+      className: "password",
+      errorName: "passwordError",
+      initialValue: "",
+      errorMessage: "Enter a valid password",
+      errorClassName: "error",
+      validator: (inputVal) => inputVal.toString().trim().length > 6,
+    },
+  ];
+
+  validateForm(className, fileldDetails, "svsdvsfvfb");
   ```
   
 ## LICENSE
