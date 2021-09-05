@@ -17,7 +17,7 @@ If you don't want to download and host formna yourself, you can include it from 
 </head>
   ```
   
-  ##LICENSE
+## LICENSE
   MIT License
 
 Copyright (c) 2021 Formna
