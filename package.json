@@ -7,5 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shakya Peiris",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Formna/Formna.git"
+  },
+  "keywords": [
+    "Form",
+    "Form",
+    "Validation",
+    "Vanilla",
+    "Javascript",
+    "JavaScript"
+  ],
+  "bugs": {
+    "url": "https://github.com/Formna/Formna/issues"
+  },
+  "homepage": "https://github.com/Formna/Formna#readme"
 }
