@@ -1,5 +1,5 @@
 {
-  "name": "formna",
+  "name": "@shakya_peiris/formna",
   "version": "1.0.0",
   "description": "build vanilla js forms without much more pain",
   "main": "index.js",
@@ -9,8 +9,7 @@
   "author": "Shakya Peiris",
   "license": "ISC",
   "directories": {
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   },
   "repository": {
     "type": "git",
