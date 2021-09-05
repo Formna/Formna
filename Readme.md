@@ -4,38 +4,54 @@
 <br>Formna is a fast, small, and easy to use JavaScript library. It makes the input and form validation super easy as validation logic can be changed according to users requirements.
 
 ## Install
-There are two ways to install Formna :
-### Download Formna
-The current versions of Formna can be downloaded from <a href="#"><b>here<b></a>
-### Use Formna CDN
-If you don't want to download and host formna yourself, you can include it from a CDN (Content Delivery Network)
+```npm install formna```
   
 ## Usage
+* To Validate a Single Input
+
+```javascript
+  import { validateInput } from "formna";
+
+  const inputId = "name"; // id of the input field
+  const errorId = "nameError"; // id of the error field relevant to the input
+  const initialValue = ""; // initial value
+  const errorMessage = "Enter a valid name"; // error message to be show
+  const errorClassName = "error"; // class related to changes to be shown in the input element when an error occurs
+  const validator = (inputVal) => inputVal.trim().length > 0; // validation logic
+
+  const {
+    value: nameInputValue,
+    isValid: isNameValid,
+    focus: focusName,
+    hasError: nameHasError,
+    reset: resetName
+  } = validateInput(inputId, errorId, initialValue, errorMessage, errorClassName, validator)
+  ```
 * To Validate a Complete Form.
-  ```javascript
-  import { validateForm } from 'formna';
+```javascript
+  import { validateForm } from "formna";
 
   const className = "form";
   const fileldDetails = [
     {
-      className: "username",
-      errorName: "usernameError",
-      initialValue: "",
-      errorMessage: "Enter a valid email",
-      errorClassName: "error",
-      validator: (inputVal) => inputVal.includes("@"),
+      id: "username", //id of the input field
+      errorId: "usernameError", //id of the error field of the respective input
+      initialValue: "", // initial value of the input
+      errorMessage: "Enter a valid email", // error message to be shown
+      errorClassName: "error", // class related to changes need to be seen in the input element
+      validator: (inputVal) => inputVal.includes("@"), // validation logic
     },
     {
-      className: "password",
-      errorName: "passwordError",
+      id: "password",
+      errorId: "passwordError",
       initialValue: "",
       errorMessage: "Enter a valid password",
       errorClassName: "error",
       validator: (inputVal) => inputVal.toString().trim().length > 6,
     },
   ];
-
-  validateForm(className, fileldDetails, "svsdvsfvfb");
+  const postEndPoint = "";
+  validateForm(className, fileldDetails, postEndPoint);
   ```
   
 ## LICENSE
