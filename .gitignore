@@ -1,2 +1,5 @@
 /.parcel-cache
 /test
+/example/.parcel-cache
+/example/dist
+/example/node_modules
