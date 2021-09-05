@@ -1,7 +1,7 @@
 # Formna
 ### Quickly validate forms on your website
 ![](https://david-dm.org/iarchitsharma/Formna.svg)
-Formna is a fast, small, and easy to use JavaScript library. It makes the form validation super easy.
+<br>Formna is a fast, small, and easy to use JavaScript library. It makes the form validation super easy.
 
 ## Install
 There are two ways to install Formna :
