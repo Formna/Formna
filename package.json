@@ -1,6 +1,6 @@
 {
   "name": "formna",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "build vanilla js forms without much more pain",
   "main": "index.js",
   "scripts": {
