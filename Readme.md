@@ -50,7 +50,7 @@
       validator: (inputVal) => inputVal.toString().trim().length > 6,
     },
   ];
-  const postEndPoint = "";
+  const postEndPoint = ""; // this is completely optional. you can see the same results without passing the third parameter.
   validateForm(className, fileldDetails, postEndPoint);
   ```
   
