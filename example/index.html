@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    .error{
-        border: 1px solid red;
+  </head>
+  <style>
+    .error {
+      border: 1px solid red;
     }
-</style>
-<body>
-    <input id="name" />
-    <p id="nameError"></p>
+  </style>
+  <body>
+    <div>
+      <h1>Single Input Validation</h1>
+      <label for="name">Name: </label>
+      <input id="name" />
+      <p id="nameError"></p>
+    </div>
+    <form id="form">
+      <h1>Complete form Validation</h1>
+      <div>
+        <label for="email">Email: </label>
+        <input id="email" />
+        <p id="emailError"></p>
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input id="password" type="password" />
+        <p id="passwordError"></p>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
 
     <script type="module" src="index.js"></script>
-</body>
+  </body>
 </html>
