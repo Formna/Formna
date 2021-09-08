@@ -52,7 +52,10 @@
     },
   ];
   const postEndPoint = ""; // this is completely optional. you can see the same results without passing the third parameter.
-  const result = validateForm(className, fileldDetails, postEndPoint); // If sending requests catch the respond with result variable
+  function formCallBack (data){ // This is also an optional parameter
+    console.log(data)
+  }
+  validateForm(className, fileldDetails, postEndPoint, formCallBack);
   ```
 ## Conclucsion
 
