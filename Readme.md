@@ -52,7 +52,7 @@
     },
   ];
   const postEndPoint = ""; // this is completely optional. you can see the same results without passing the third parameter.
-  validateForm(className, fileldDetails, postEndPoint);
+  const result = validateForm(className, fileldDetails, postEndPoint); // If sending requests catch the respond with result variable
   ```
 ## Conclucsion
 
