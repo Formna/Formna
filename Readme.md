@@ -7,6 +7,7 @@
 ```npm install formna```
   
 ## Usage
+<img src="assets/1.png" align="center">
 * To Validate a Single Input
 
 ```javascript
