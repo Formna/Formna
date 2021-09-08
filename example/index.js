@@ -30,5 +30,10 @@ const fileldDetails = [
     validator: (inputVal) => inputVal.toString().trim().length > 6,
   },
 ];
-const postEndPoint = ""; // this is completely optional. you can see the same results without passing the third parameter.
-validateForm(className, fileldDetails, postEndPoint);
+const postEndPoint = "https://ohacks-demo-default-rtdb.firebaseio.com/demo.json"; // this is completely optional. you can see the same results without passing the third parameter.
+const result = validateForm(className, fileldDetails, postEndPoint);
+console.log(result)
+
+document.getElementById(className).addEventListener("submit", () => {
+  console.log(result)
+})
