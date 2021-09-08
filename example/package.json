@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "formna": "^1.0.2"
+    "formna": "^1.0.4"
   }
 }
